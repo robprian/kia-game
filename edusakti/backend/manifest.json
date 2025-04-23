@@ -1,0 +1,62 @@
+{
+    "levels": {
+        "preschool": {
+            "name": "Preschool",
+            "age_range": "3-6",
+            "subjects": ["colors", "shapes", "animals", "numbers"],
+            "ui_theme": {
+                "primary_color": "#FF6B6B",
+                "secondary_color": "#4ECDC4",
+                "font_size": "large",
+                "use_images": true,
+                "use_audio": true
+            }
+        },
+        "elementary": {
+            "name": "Elementary School",
+            "age_range": "7-12",
+            "subjects": ["math", "language", "science"],
+            "ui_theme": {
+                "primary_color": "#45B7D1",
+                "secondary_color": "#98D8D6",
+                "font_size": "medium",
+                "use_images": true,
+                "use_audio": false
+            }
+        }
+    },
+    "subjects": {
+        "math": {
+            "name": "Mathematics",
+            "icon": "calculator"
+        },
+        "language": {
+            "name": "Language",
+            "icon": "book"
+        },
+        "science": {
+            "name": "Science",
+            "icon": "flask"
+        }
+    },
+    "questions": {
+        "elementary": {
+            "math": [
+                {
+                    "id": 1,
+                    "question": "What is 12 + 15?",
+                    "options": ["25", "27", "28", "30"],
+                    "correct_answer": "27",
+                    "explanation": "To solve this, we add 12 and 15: 12 + 15 = 27"
+                },
+                {
+                    "id": 2,
+                    "question": "What is 8 × 7?",
+                    "options": ["54", "56", "58", "60"],
+                    "correct_answer": "56",
+                    "explanation": "8 × 7 = 56 (you can think of it as 8 groups of 7 or 7 groups of 8)"
+                }
+            ]
+        }
+    }
+}
