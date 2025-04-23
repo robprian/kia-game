@@ -2,12 +2,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy only requirements.txt first to leverage Docker cache
-COPY ./requirements.txt /app/requirements.txt
+# Copy requirements first for caching
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
-COPY . /app/
+COPY . .
 
 EXPOSE 8000
 
