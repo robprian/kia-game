@@ -3,6 +3,7 @@ primary_region = "sin"
 
 [build]
   dockerfile = "backend/Dockerfile"
+  context = "backend"
 
 [http_service]
   internal_port = 8000
